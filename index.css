@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    font-family: 'Poppins';
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 3px solid white;
+    padding: 20px 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  a:before {
+    content: '';
+    background-color: #FFB400;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transform: skew(0deg);
+    animation: moving 1.2s linear infinite;
+    transition: all .5s;
+  }
+  
+  @keyframes moving {
+    from { 
+        left: -120px; 
+    }
+    
+    to {
+         left: 100%; 
+    }
+  }
+  
+  a:hover::before {
+    width: 200%;
+    animation: none;
+  }
