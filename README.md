@@ -1,1 +1,1 @@
-<img src="./github/button.gif" display: flex justify-content: center/>
+<img src="./github/button.gif" display: flex justify-content: center align-items:center/>
